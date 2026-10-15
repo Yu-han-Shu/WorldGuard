@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "code": "VERIFIED",
+  "scene_revision": 1,
+  "binding": {
+    "environment_hash": "ce821546475eadae514f43a37ae76c555b5b1460b2680626aafecf8be52e9428",
+    "task_hash": "8ce96eef23ed5aefaa9a582eea873d7111953c977ce554ce34a9c6fd65a98e2b",
+    "constraints_hash": "4bc586a281dab2b018eeb1292363202e80bf91042be1e062b638aa3e501bba93",
+    "path_hash": "d844d76226b76bd0a25ea54f556d65fd809a4390fe884e0a2b197df5630be087",
+    "verifier_version": "capsule-raw-grid-1"
+  },
+  "violations": [],
+  "epsilon_m": 1e-09,
+  "start_error_m": 0.0,
+  "goal_error_m": 0.0,
+  "minimum_centerline_distance_m": 0.375,
+  "minimum_remaining_clearance_m": 0.14500000000000002,
+  "certificate_hash": "84f93c8be1241faec05b58fb68a049f325239bda1abbdabe4594b7e0eafe004f"
+}

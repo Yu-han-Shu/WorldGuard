@@ -1,0 +1,14 @@
+{
+  "name": "@worldguard/agh-bounded",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./index.mjs",
+  "scripts": {"test": "node --test guard.test.mjs"},
+  "agnes": {
+    "plugins": [
+      {"export": "boundedGuard", "id": "ext:worldguard/bounded-guard", "inject": ["extension"]},
+      {"export": "mcpTools", "id": "ext:worldguard/mcp-tools", "inject": ["extension"]}
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "experiment": "final_v1",
+  "frozen_at": "2026-10-12T13:44:55.732325+00:00",
+  "source_manifest_hash": "235eee29a2bad01e6c1f55f6a9b214225be9a40e89e0254b711b72bbd7b5242a",
+  "runtime_mode": "DETERMINISTIC",
+  "E1_cases": 12,
+  "methods": [
+    "reference_current",
+    "TEST_MUTANT_stale_view"
+  ],
+  "legacy": "BLOCKED",
+  "E2": "NOT_RUN_NO_LIVE_AGH",
+  "model_requests": 0,
+  "seed_rule": "1001+i,2001+i,3001+i,4001+i for i=0..2 after freezing",
+  "development_seeds": [
+    11,
+    23,
+    37
+  ],
+  "max_sut_per_case": 2,
+  "oracle": "independent continuous geometry on finite 4-neighbor graph; timeout=15s gives UNKNOWN",
+  "failure_signature": "planner_version + violation code + family + obstacle/boundary class",
+  "timeouts": "retain; UNKNOWN; do not count as SUT defects",
+  "comparison_scope": "E1 correctness/recovery only; no Agent advantage claims",
+  "danger_detection_rate": "null: independent candidate-path truth set not constructed",
+  "data_isolation": "no model executed; no blind E2 claim"
+}

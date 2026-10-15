@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run_9a1ee432d4884f77a1d516f5daceec51",
+  "case_id": "stop_4001",
+  "runtime_mode": "DETERMINISTIC",
+  "execution_status": "COMPLETED",
+  "navigation_status": "SAFE_STOP",
+  "reached": false,
+  "reason_code": "NO_PATH_IN_FINITE_GRAPH",
+  "original_audit": {
+    "status": "UNKNOWN",
+    "code": "INVALID_PATH",
+    "scene_revision": 1,
+    "binding": null,
+    "violations": [],
+    "epsilon_m": 1e-09,
+    "start_error_m": null,
+    "goal_error_m": null,
+    "minimum_centerline_distance_m": null,
+    "minimum_remaining_clearance_m": null,
+    "certificate_hash": null
+  },
+  "recovery_audit": {
+    "status": "UNKNOWN",
+    "code": "INVALID_PATH",
+    "scene_revision": 1,
+    "binding": null,
+    "violations": [],
+    "epsilon_m": 1e-09,
+    "start_error_m": null,
+    "goal_error_m": null,
+    "minimum_centerline_distance_m": null,
+    "minimum_remaining_clearance_m": null,
+    "certificate_hash": null
+  },
+  "original_plan": {
+    "planner_name": "reference_safe_astar",
+    "planner_version": "reference-safe-astar-1",
+    "planner_scene_hash": "dbf1a5e255ca619d14950893cc5a3f1549348f33e63d1e08ac23e635ad175ec2",
+    "path": [],
+    "code": "NO_PATH",
+    "elapsed_seconds": 0.009898399992380291,
+    "endpoint_error_m": null
+  },
+  "recovery_plan": {
+    "planner_name": "reference_safe_astar",
+    "planner_version": "reference-safe-astar-1",
+    "planner_scene_hash": "dbf1a5e255ca619d14950893cc5a3f1549348f33e63d1e08ac23e635ad175ec2",
+    "path": [],
+    "code": "NO_PATH",
+    "elapsed_seconds": 0.010120599996298552,
+    "endpoint_error_m": null
+  },
+  "oracle": {
+    "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+    "visited": 330,
+    "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+    "status": "UNREACHABLE",
+    "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+  },
+  "stale_view": false,
+  "sut_executions": 2,
+  "model_requests": 0,
+  "model_tokens": null,
+  "model_cost": null,
+  "verdict": "INCONCLUSIVE"
+}

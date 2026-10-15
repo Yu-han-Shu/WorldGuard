@@ -1,0 +1,56 @@
+{
+  "scene_id": "dual_route_1002",
+  "revision": 1,
+  "origin_xy_m": [
+    0.0,
+    0.0
+  ],
+  "resolution_m": 0.25,
+  "width": 32,
+  "height": 24,
+  "occupied": [
+    [
+      3,
+      15
+    ],
+    [
+      4,
+      15
+    ],
+    [
+      5,
+      15
+    ],
+    [
+      10,
+      15
+    ],
+    [
+      11,
+      15
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      13,
+      15
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      19,
+      15
+    ],
+    [
+      20,
+      15
+    ]
+  ],
+  "unknown": [],
+  "schema_version": "1.0",
+  "source": "SYNTHETIC_GEOMETRIC"
+}

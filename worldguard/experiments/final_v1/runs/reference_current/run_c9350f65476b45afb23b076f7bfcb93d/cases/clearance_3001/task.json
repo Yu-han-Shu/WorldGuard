@@ -1,0 +1,17 @@
+{
+  "task_id": "task_3001",
+  "scene_id": "corridor_3001",
+  "start_xy_m": [
+    1.125,
+    2.875
+  ],
+  "goal_xy_m": [
+    6.875,
+    2.875
+  ],
+  "robot": {
+    "radius_m": 0.18,
+    "clearance_margin_m": 0.05,
+    "endpoint_tolerance_m": 1e-06
+  }
+}

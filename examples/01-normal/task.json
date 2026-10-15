@@ -1,0 +1,17 @@
+{
+  "task_id": "task_90749",
+  "scene_id": "challenge_90749",
+  "start_xy_m": [
+    0.875,
+    8.125
+  ],
+  "goal_xy_m": [
+    21.375,
+    8.125
+  ],
+  "robot": {
+    "radius_m": 0.18,
+    "clearance_margin_m": 0.05,
+    "endpoint_tolerance_m": 1e-06
+  }
+}

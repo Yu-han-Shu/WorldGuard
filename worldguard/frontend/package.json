@@ -1,0 +1,30 @@
+{
+  "name": "worldguard-frontend-contract",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit -p tsconfig.app.json && vite build",
+    "dev": "vite --host 127.0.0.1",
+    "generate": "openapi-typescript openapi.json -o schema.d.ts --default-non-nullable false",
+    "preview": "vite preview --host 127.0.0.1 --port 5173 --strictPort",
+    "test": "node --experimental-strip-types --test client.test.ts mapGeometry.test.ts executionActivity.test.ts",
+    "test:e2e": "node --test e2e.test.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "openapi-typescript": "^7.10.1",
+    "playwright": "^1.58.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "planner_name": "reference_safe_astar",
+  "planner_version": "reference-safe-astar-1",
+  "planner_scene_hash": "42b15bcbd63bd1ea147b4113b19df93fa4c8f74ac9b77d94a471b140e36f9f12",
+  "path": [],
+  "code": "NO_PATH",
+  "elapsed_seconds": 0.010375099998782389,
+  "endpoint_error_m": null
+}

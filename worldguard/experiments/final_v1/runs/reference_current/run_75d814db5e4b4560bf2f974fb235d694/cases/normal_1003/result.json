@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run_75d814db5e4b4560bf2f974fb235d694",
+  "case_id": "normal_1003",
+  "runtime_mode": "DETERMINISTIC",
+  "execution_status": "COMPLETED",
+  "navigation_status": "REACHED",
+  "reached": true,
+  "reason_code": "VERIFIED_ORIGINAL",
+  "original_audit": {
+    "status": "PASS",
+    "code": "VERIFIED",
+    "scene_revision": 1,
+    "binding": {
+      "environment_hash": "0e86f85bbf9d5a9b1b5604c425bc902da2b9a9f6b87628110858b7da6f06f9bd",
+      "task_hash": "0cb70cca6e2262b8cbcc73e1352440afdd7a6dcf81f6bf0be91bcea145d01640",
+      "constraints_hash": "4bc586a281dab2b018eeb1292363202e80bf91042be1e062b638aa3e501bba93",
+      "path_hash": "58b0bd62f0acf255564c40c2d1a1b1cc6d570e4c41afd6aac0863f9156f447a3",
+      "verifier_version": "capsule-raw-grid-1"
+    },
+    "violations": [],
+    "epsilon_m": 1e-09,
+    "start_error_m": 0.0,
+    "goal_error_m": 0.0,
+    "minimum_centerline_distance_m": 0.375,
+    "minimum_remaining_clearance_m": 0.14500000000000002,
+    "certificate_hash": "bf22f0ef428e4d0123f1287d8a3235e09b563f33d9d20e58b7188eba6db3714f"
+  },
+  "recovery_audit": null,
+  "original_plan": {
+    "planner_name": "reference_safe_astar",
+    "planner_version": "reference-safe-astar-1",
+    "planner_scene_hash": "0e86f85bbf9d5a9b1b5604c425bc902da2b9a9f6b87628110858b7da6f06f9bd",
+    "path": [
+      [
+        1.125,
+        1.875
+      ],
+      [
+        1.375,
+        1.875
+      ],
+      [
+        1.625,
+        1.875
+      ],
+      [
+        1.875,
+        1.875
+      ],
+      [
+        2.125,
+        1.875
+      ],
+      [
+        2.375,
+        1.875
+      ],
+      [
+        2.625,
+        1.875
+      ],
+      [
+        2.875,
+        1.875
+      ],
+      [
+        3.125,
+        1.875
+      ],
+      [
+        3.375,
+        1.875
+      ],
+      [
+        3.625,
+        1.875
+      ],
+      [
+        3.875,
+        1.875
+      ],
+      [
+        4.125,
+        1.875
+      ],
+      [
+        4.375,
+        1.875
+      ],
+      [
+        4.625,
+        1.875
+      ],
+      [
+        4.875,
+        1.875
+      ],
+      [
+        5.125,
+        1.875
+      ],
+      [
+        5.375,
+        1.875
+      ],
+      [
+        5.625,
+        1.875
+      ],
+      [
+        5.875,
+        1.875
+      ],
+      [
+        6.125,
+        1.875
+      ],
+      [
+        6.375,
+        1.875
+      ],
+      [
+        6.625,
+        1.875
+      ],
+      [
+        6.875,
+        1.875
+      ]
+    ],
+    "code": "PLANNED",
+    "elapsed_seconds": 0.0006309000018518418,
+    "endpoint_error_m": 0.0
+  },
+  "recovery_plan": null,
+  "oracle": null,
+  "stale_view": false,
+  "sut_executions": 1,
+  "model_requests": 0,
+  "model_tokens": null,
+  "model_cost": null,
+  "verdict": "BOUNDED_PASS"
+}

@@ -1,0 +1,127 @@
+{
+  "runtime_mode": "REPLAY",
+  "source_run_id": "run_cb2e2f68e0d44fdc8c1df232596d020a",
+  "matches": true,
+  "audit": {
+    "status": "FAIL",
+    "code": "VIOLATIONS",
+    "scene_revision": 1,
+    "binding": {
+      "environment_hash": "2b4bd1415e6293ad9a739c07fe8b95ad1afe19fb34edfe15889bddb74ce07289",
+      "task_hash": "89c5461d8e7cc45243ebbe3bf787234d1ee7b522d6ab6c49dbdf08eab7ef7ac2",
+      "constraints_hash": "4bc586a281dab2b018eeb1292363202e80bf91042be1e062b638aa3e501bba93",
+      "path_hash": "58b0bd62f0acf255564c40c2d1a1b1cc6d570e4c41afd6aac0863f9156f447a3",
+      "verifier_version": "capsule-raw-grid-1"
+    },
+    "violations": [
+      {
+        "code": "FOOTPRINT_COLLISION",
+        "segment_index": 11,
+        "segment_xy_m": [
+          [
+            3.875,
+            1.875
+          ],
+          [
+            4.125,
+            1.875
+          ]
+        ],
+        "centerline_distance_m": 0.125,
+        "obstacle_cell": [
+          7,
+          17
+        ],
+        "obstacle_xy_m": [
+          4.25,
+          1.875
+        ],
+        "kind": "OBSTACLE",
+        "remaining_clearance_m": -0.10499999999999998
+      },
+      {
+        "code": "FOOTPRINT_COLLISION",
+        "segment_index": 12,
+        "segment_xy_m": [
+          [
+            4.125,
+            1.875
+          ],
+          [
+            4.375,
+            1.875
+          ]
+        ],
+        "centerline_distance_m": 0.0,
+        "obstacle_cell": [
+          7,
+          17
+        ],
+        "obstacle_xy_m": [
+          4.25,
+          1.875
+        ],
+        "kind": "OBSTACLE",
+        "remaining_clearance_m": -0.22999999999999998
+      },
+      {
+        "code": "FOOTPRINT_COLLISION",
+        "segment_index": 13,
+        "segment_xy_m": [
+          [
+            4.375,
+            1.875
+          ],
+          [
+            4.625,
+            1.875
+          ]
+        ],
+        "centerline_distance_m": 0.0,
+        "obstacle_cell": [
+          7,
+          17
+        ],
+        "obstacle_xy_m": [
+          4.375,
+          1.875
+        ],
+        "kind": "OBSTACLE",
+        "remaining_clearance_m": -0.22999999999999998
+      },
+      {
+        "code": "FOOTPRINT_COLLISION",
+        "segment_index": 14,
+        "segment_xy_m": [
+          [
+            4.625,
+            1.875
+          ],
+          [
+            4.875,
+            1.875
+          ]
+        ],
+        "centerline_distance_m": 0.125,
+        "obstacle_cell": [
+          7,
+          17
+        ],
+        "obstacle_xy_m": [
+          4.5,
+          1.875
+        ],
+        "kind": "OBSTACLE",
+        "remaining_clearance_m": -0.10499999999999998
+      }
+    ],
+    "epsilon_m": 1e-09,
+    "start_error_m": 0.0,
+    "goal_error_m": 0.0,
+    "minimum_centerline_distance_m": 0.0,
+    "minimum_remaining_clearance_m": -0.22999999999999998,
+    "certificate_hash": null
+  },
+  "recovery_matches": true,
+  "model_requests": 0
+}

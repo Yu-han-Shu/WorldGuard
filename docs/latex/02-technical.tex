@@ -1,0 +1,76 @@
+\documentclass[UTF8,10pt,a4paper]{ctexart}
+\usepackage[margin=20mm,headheight=26pt]{geometry}
+\usepackage{graphicx,xcolor,fancyhdr,booktabs,tabularx,enumitem,hyperref}
+\definecolor{ink}{HTML}{12313B}\definecolor{teal}{HTML}{008F89}
+\hypersetup{colorlinks=true,urlcolor=teal,linkcolor=teal,pdftitle={WorldGuard 提交材料}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}\linespread{1.12}
+\setlist{nosep,leftmargin=1.5em}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\raisebox{-4pt}{\includegraphics[height=8mm]{assets/logo.png}}\quad\textbf{\textcolor{ink}{WorldGuard}}}
+\fancyhead[R]{\small 零界智行\quad U406}
+\fancyfoot[L]{\footnotesize 本科生组 · 南京大学 / 东南大学}
+\fancyfoot[R]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\ctexset{section={format=\Large\bfseries\color{ink},beforeskip=12pt,afterskip=6pt},subsection={format=\large\bfseries\color{teal}}}
+\newcommand{\cover}[2]{\vspace*{5mm}{\small\textcolor{teal}{WORLDGUARD / SUBMISSION 2026}}\par\vspace{4mm}{\huge\bfseries\color{ink}#1}\par\vspace{3mm}{\large #2}\par\vspace{4mm}\hrule\vspace{5mm}}
+\newcommand{\note}[1]{\par\smallskip\noindent\colorbox{teal!7}{\parbox{0.95\linewidth}{\small #1}}\par\smallskip}
+\begin{document}
+
+\cover{技术信息与复现指南}{执行链、模型登记、环境与复核步骤}
+\section{系统结构}
+React / TypeScript 工作台通过本机 HTTP API 调用 Python 业务层。业务层持有测试任务与案例状态，调用规划器和独立几何验收器；LIVE 模式通过 Node.js 适配层接入官方 AGH Host，再由受限 MCP 服务暴露业务工具。浏览器不持有模型 Key。
+
+\textbf{核心链路：}任务确认 → CampaignRunner → 本机认证 MCP → 官方 AGH Host / 模型适配器 → 工具调用 → 当前原始地图验收 → 恢复或停止 → 报告与证据。
+\section{模型与外部依赖登记}
+\par
+\begin{tabularx}{\linewidth}{p{28mm}Xp{37mm}}\toprule
+用途 & 标识与提供方 & 参与方式\\\midrule
+正式代表运行 & Agnes，\texttt{agnes-3.0-flash}；不可变后端版本未获提供 & AGH 模型适配器，核心编排\\
+历史调试 & Moonshot Kimi，\texttt{kimi-for-coding} & AGH 集成调试；与正式样例分开\\
+开发辅助 & Codex；具体开发模型版本未完整记录 & 代码、测试和文档辅助\\
+视觉素材 & 内置图像生成工具，模型版本未完整记录 & 装饰与概念设计，非测试证据\\\bottomrule
+\end{tabularx}\par
+
+用户提供的主办方新答疑允许合法第三方模型，但要求使用 AGH 并如实披露。数据来自自建合成网格和测试输入；无外部真实仓库数据集。无设备接口、ROS / Nav2 实机集成或动力学软件依赖。
+
+官方 AGH 仓库：\url{https://github.com/AgnesAI-Labs/agnes-harness}\\
+固定提交：\texttt{dc267c3c78429933e2b3d8c5d544e56bb980a574}。
+\section{可运行环境}
+Python 项目声明为 3.11 及以上；现有本机记录为 Windows、Python 3.13、Node 24。前端使用 React、TypeScript 与 Vite，依赖版本以 package-lock.json 为准。后端依赖见 pyproject.toml。默认离线模式无需模型凭据。
+\begin{verbatim}
+cd worldguard
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e ".[api,mcp]"
+.\.venv\Scripts\python.exe -m worldguard.api --port 8520
+\end{verbatim}
+另开终端进入 \texttt{worldguard/frontend}：
+\begin{verbatim}
+npm ci
+$env:VITE_WORLDGUARD_API_URL = 'http://127.0.0.1:8520'
+npm run dev -- --port 5173 --strictPort
+\end{verbatim}
+打开 \url{http://127.0.0.1:5173/\#agent}，载入示例策略、填写目标、准备并确认计划、执行后查看报告。不要把旧 Streamlit 的 8510 端口作为当前前端入口。
+
+\section{LIVE Agnes 配置}
+参照仓库的 AGH 安装说明恢复并构建固定版本官方运行时，在官方界面配置模型。将 \nolinkurl{model_budget.example.json} 复制为本机配置，填写凭据 home、AGH 目录和显式授权记录；Key 由官方凭据存储管理，不写入公开仓库。
+
+本机配置需有单运行请求、输出与时间上限，API 启动前设置 \nolinkurl{WORLDGUARD_LIVE_CONFIG} 指向该文件。配置不完整或预算不足时应拒绝 LIVE，不能静默伪装成模型运行。默认模板禁用真实调用。
+
+记录中的单运行限制为 30 次请求、300 秒总时限、90 秒单请求等待；每次重试与辅助请求都纳入预算。工具白名单排除任意 shell、文件写入和未经授权的外部网络操作。
+\section{三类样例复现}
+每个样例目录含 before / after 地图、任务约束、故障、路径、审计、结果与 manifest。先验证各 JSON 规范化内容的 SHA-256，再在新目录重放：
+\begin{verbatim}
+python -m worldguard.cli replay --case-dir CASE_DIR \
+  --out NEW_OUTPUT_DIRECTORY
+\end{verbatim}
+此处反斜杠仅表示排版换行；PowerShell 中请将命令写为同一行。重放不调用模型，只复核已有路径和几何结果，不能当作新模型实验。输出目录必须不存在。
+\section{验证口径与异常处理}
+原始路径验收 FAIL 与最终恢复 PASS 同时保留；SAFE\_STOP 不计作 REACHED。没有合格恢复路径时保持原始目标与机器人尺寸，不通过缩小机器人、删除障碍或移动目标来制造成功。
+
+认证失败、额度耗尽、接口超时、模型断线等属于基础设施问题，与导航策略缺陷分开。未知用量保留 null。所有公开材料不得包含 Key、个人配置、未经审查的原始会话或本机隐私路径。
+\section{已执行检查与未完成项}
+本轮在现有环境运行 Python 测试 178 项通过；前端构建通过，前端单元测试 6 项通过、1 项集成测试跳过；AGH 保护层 MOCK 测试 15 项通过。MOCK 测试仅证明保护逻辑，不作为真实模型证据。
+
+完整的新电脑安装、独立第三方终验尚未完成。官方 AGH 网页导出、成员实际分工与签名、视频链接和公开内容截图已登记，其余状态见提交索引，不默认为完成。
+
+\end{document}

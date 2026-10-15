@@ -1,0 +1,13 @@
+{
+  "status": "UNKNOWN",
+  "code": "INVALID_PATH",
+  "scene_revision": 1,
+  "binding": null,
+  "violations": [],
+  "epsilon_m": 1e-09,
+  "start_error_m": null,
+  "goal_error_m": null,
+  "minimum_centerline_distance_m": null,
+  "minimum_remaining_clearance_m": null,
+  "certificate_hash": null
+}

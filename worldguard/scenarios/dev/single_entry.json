@@ -1,0 +1,108 @@
+{
+  "scene": {
+    "scene_id": "single_entry_37",
+    "revision": 0,
+    "origin_xy_m": [
+      0.0,
+      0.0
+    ],
+    "resolution_m": 0.25,
+    "width": 32,
+    "height": 24,
+    "occupied": [
+      [
+        0,
+        16
+      ],
+      [
+        1,
+        16
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        3,
+        16
+      ],
+      [
+        4,
+        16
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        16
+      ],
+      [
+        8,
+        16
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        16,
+        16
+      ],
+      [
+        17,
+        16
+      ],
+      [
+        18,
+        16
+      ],
+      [
+        19,
+        16
+      ],
+      [
+        20,
+        16
+      ],
+      [
+        21,
+        16
+      ],
+      [
+        22,
+        16
+      ],
+      [
+        23,
+        16
+      ]
+    ],
+    "unknown": [],
+    "schema_version": "1.0",
+    "source": "SYNTHETIC_GEOMETRIC"
+  },
+  "task": {
+    "task_id": "task_37",
+    "scene_id": "single_entry_37",
+    "start_xy_m": [
+      1.125,
+      2.875
+    ],
+    "goal_xy_m": [
+      6.875,
+      2.875
+    ],
+    "robot": {
+      "radius_m": 0.18,
+      "clearance_margin_m": 0.05,
+      "endpoint_tolerance_m": 1e-06
+    }
+  },
+  "seed": 37
+}

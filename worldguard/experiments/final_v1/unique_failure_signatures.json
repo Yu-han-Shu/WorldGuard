@@ -1,0 +1,23 @@
+{
+  "reference_current": [],
+  "TEST_MUTANT_stale_view": [
+    [
+      "reference-safe-astar-1",
+      "FOOTPRINT_COLLISION",
+      "corridor",
+      "OBSTACLE"
+    ],
+    [
+      "reference-safe-astar-1",
+      "FOOTPRINT_COLLISION",
+      "dual_route",
+      "OBSTACLE"
+    ],
+    [
+      "reference-safe-astar-1",
+      "FOOTPRINT_COLLISION",
+      "single_entry",
+      "OBSTACLE"
+    ]
+  ]
+}

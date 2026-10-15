@@ -1,0 +1,11 @@
+{
+  "changed_files": [
+    "src/worldguard/agh_bridge.py",
+    "requirements.lock"
+  ],
+  "explanation": {
+    "src/worldguard/agh_bridge.py": "Default profile corrected to official local-dev inside dedicated home; never invoked by E1.",
+    "requirements.lock": "Added setuptools 84.0.0 for clean reproducible build; numerical dependencies unchanged."
+  },
+  "e1_relevant_source_unchanged": true
+}

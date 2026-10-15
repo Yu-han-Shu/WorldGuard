@@ -1,0 +1,7 @@
+{
+  "mode": "builtin-imagegen",
+  "purpose": "Decorative warehouse atmosphere for the WorldGuard intake page. Not a simulation, map or assessment evidence.",
+  "prompt": "Use case: stylized-concept. Asset type: decorative background illustration for a robotics navigation assessment web application, NOT an interface or evidence map. Create an elegant cinematic realistic 3D warehouse interior in a very wide landscape composition, 1792 by 1024 proportions. Graphite and midnight teal palette, sparse luminous mint cyan accents, industrial steel shelving with muted cardboard boxes receding in perspective. One compact graphite autonomous mobile robot with a cargo crate, a beautiful mint light strip and visible wheels in the rightmost third, facing diagonally toward the viewer. A restrained dotted mint navigation trace turns on the polished dark warehouse floor near the robot. Right side detailed, left 55 percent and center top intentionally very dark with soft gradients and no dominant objects, for legible HTML headings and forms. Refined material detail, realistic ambient reflections, subtle volumetric light, premium engineering product mood. Wide environment with objects arranged on the far right; avoid bright overhead lights, overly blue light, excessive bloom or cyberpunk clutter. No humans, no logos, no words, no text, no letters, no buttons, no interface, no charts, no statistics, no watermark.",
+  "output": "studio-warehouse-v7.png",
+  "date": "2026-10-14"
+}

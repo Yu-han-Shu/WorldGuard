@@ -1,0 +1,16 @@
+{
+  "external_model_calls_allowed": false,
+  "approval_reference": null,
+  "provider": "Agnes",
+  "verified_route_model": null,
+  "max_total_requests": 0,
+  "max_requests_per_run": 30,
+  "max_output_tokens_per_request": null,
+  "max_total_wall_seconds": null,
+  "max_wall_seconds_per_run": 300,
+  "request_timeout_seconds": 90,
+  "agh_root": null,
+  "credential_home": null,
+  "max_cost_amount": null,
+  "require_manual_reapproval_when_exhausted": true
+}

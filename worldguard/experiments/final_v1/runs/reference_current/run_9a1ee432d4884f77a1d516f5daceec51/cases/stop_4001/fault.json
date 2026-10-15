@@ -1,0 +1,7 @@
+{
+  "case_id": "stop_4001",
+  "parent_scene_hash": "685135882844ce34dacfc2c82723cb973a9d02ead42552246a0665be70173b92",
+  "kind": "DISCONNECT_GOAL",
+  "seed": 4001,
+  "severity": 1
+}

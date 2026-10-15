@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.0",
+  "run_id": "run_efaa6db399134159b26702da854916cd",
+  "case_id": "stop_4001",
+  "runtime_mode": "DETERMINISTIC",
+  "execution_status": "COMPLETED",
+  "navigation_status": "SAFE_STOP",
+  "reached": false,
+  "reason_code": "NO_PATH_IN_FINITE_GRAPH",
+  "original_audit": {
+    "status": "FAIL",
+    "code": "VIOLATIONS",
+    "scene_revision": 1,
+    "binding": {
+      "environment_hash": "dbf1a5e255ca619d14950893cc5a3f1549348f33e63d1e08ac23e635ad175ec2",
+      "task_hash": "5e037448ef82c16b162c09e7bc4d87d91f5bdffaac9d2a24c4bfc350eea3d890",
+      "constraints_hash": "4bc586a281dab2b018eeb1292363202e80bf91042be1e062b638aa3e501bba93",
+      "path_hash": "e43204c1c1debbee4b0c2dcf706dc81c4897ecebb5bbfb8c7371246bb7648fec",
+      "verifier_version": "capsule-raw-grid-1"
+    },
+    "violations": [
+      {
+        "code": "FOOTPRINT_COLLISION",
+        "segment_index": 11,
+        "segment_xy_m": [
+          [
+            3.875,
+            2.875
+          ],
+          [
+            4.125,
+            2.875
+          ]
+        ],
+        "centerline_distance_m": 0.125,
+        "obstacle_cell": [
+          11,
+          17
+        ],
+        "obstacle_xy_m": [
+          4.25,
+          2.875
+        ],
+        "kind": "OBSTACLE",
+        "remaining_clearance_m": -0.10499999999999998
+      },
+      {
+        "code": "FOOTPRINT_COLLISION",
+        "segment_index": 12,
+        "segment_xy_m": [
+          [
+            4.125,
+            2.875
+          ],
+          [
+            4.375,
+            2.875
+          ]
+        ],
+        "centerline_distance_m": 0.0,
+        "obstacle_cell": [
+          11,
+          17
+        ],
+        "obstacle_xy_m": [
+          4.25,
+          2.875
+        ],
+        "kind": "OBSTACLE",
+        "remaining_clearance_m": -0.22999999999999998
+      },
+      {
+        "code": "FOOTPRINT_COLLISION",
+        "segment_index": 13,
+        "segment_xy_m": [
+          [
+            4.375,
+            2.875
+          ],
+          [
+            4.625,
+            2.875
+          ]
+        ],
+        "centerline_distance_m": 0.0,
+        "obstacle_cell": [
+          11,
+          17
+        ],
+        "obstacle_xy_m": [
+          4.375,
+          2.875
+        ],
+        "kind": "OBSTACLE",
+        "remaining_clearance_m": -0.22999999999999998
+      },
+      {
+        "code": "FOOTPRINT_COLLISION",
+        "segment_index": 14,
+        "segment_xy_m": [
+          [
+            4.625,
+            2.875
+          ],
+          [
+            4.875,
+            2.875
+          ]
+        ],
+        "centerline_distance_m": 0.125,
+        "obstacle_cell": [
+          11,
+          17
+        ],
+        "obstacle_xy_m": [
+          4.5,
+          2.875
+        ],
+        "kind": "OBSTACLE",
+        "remaining_clearance_m": -0.10499999999999998
+      }
+    ],
+    "epsilon_m": 1e-09,
+    "start_error_m": 0.0,
+    "goal_error_m": 0.0,
+    "minimum_centerline_distance_m": 0.0,
+    "minimum_remaining_clearance_m": -0.22999999999999998,
+    "certificate_hash": null
+  },
+  "recovery_audit": {
+    "status": "UNKNOWN",
+    "code": "INVALID_PATH",
+    "scene_revision": 1,
+    "binding": null,
+    "violations": [],
+    "epsilon_m": 1e-09,
+    "start_error_m": null,
+    "goal_error_m": null,
+    "minimum_centerline_distance_m": null,
+    "minimum_remaining_clearance_m": null,
+    "certificate_hash": null
+  },
+  "original_plan": {
+    "planner_name": "reference_safe_astar",
+    "planner_version": "reference-safe-astar-1",
+    "planner_scene_hash": "685135882844ce34dacfc2c82723cb973a9d02ead42552246a0665be70173b92",
+    "path": [
+      [
+        1.125,
+        2.875
+      ],
+      [
+        1.375,
+        2.875
+      ],
+      [
+        1.625,
+        2.875
+      ],
+      [
+        1.875,
+        2.875
+      ],
+      [
+        2.125,
+        2.875
+      ],
+      [
+        2.375,
+        2.875
+      ],
+      [
+        2.625,
+        2.875
+      ],
+      [
+        2.875,
+        2.875
+      ],
+      [
+        3.125,
+        2.875
+      ],
+      [
+        3.375,
+        2.875
+      ],
+      [
+        3.625,
+        2.875
+      ],
+      [
+        3.875,
+        2.875
+      ],
+      [
+        4.125,
+        2.875
+      ],
+      [
+        4.375,
+        2.875
+      ],
+      [
+        4.625,
+        2.875
+      ],
+      [
+        4.875,
+        2.875
+      ],
+      [
+        5.125,
+        2.875
+      ],
+      [
+        5.375,
+        2.875
+      ],
+      [
+        5.625,
+        2.875
+      ],
+      [
+        5.875,
+        2.875
+      ],
+      [
+        6.125,
+        2.875
+      ],
+      [
+        6.375,
+        2.875
+      ],
+      [
+        6.625,
+        2.875
+      ],
+      [
+        6.875,
+        2.875
+      ]
+    ],
+    "code": "PLANNED",
+    "elapsed_seconds": 0.0020435000042198226,
+    "endpoint_error_m": 0.0
+  },
+  "recovery_plan": {
+    "planner_name": "reference_safe_astar",
+    "planner_version": "reference-safe-astar-1",
+    "planner_scene_hash": "dbf1a5e255ca619d14950893cc5a3f1549348f33e63d1e08ac23e635ad175ec2",
+    "path": [],
+    "code": "NO_PATH",
+    "elapsed_seconds": 0.008515699999406934,
+    "endpoint_error_m": null
+  },
+  "oracle": {
+    "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+    "visited": 330,
+    "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+    "status": "UNREACHABLE",
+    "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+  },
+  "stale_view": true,
+  "sut_executions": 2,
+  "model_requests": 0,
+  "model_tokens": null,
+  "model_cost": null,
+  "verdict": "FAILURES_FOUND"
+}

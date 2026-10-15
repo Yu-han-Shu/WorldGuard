@@ -1,0 +1,17 @@
+.venv/
+.local/
+configs/local.json
+configs/model_budget.local.json
+configs/model_usage.local.json
+configs/model_usage.lock/
+artifacts/
+dist/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.egg-info/
+*.pyc
+.env*
+!.env.example
+build/
+evidence/**/*.png

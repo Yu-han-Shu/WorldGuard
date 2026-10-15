@@ -1,0 +1,39 @@
+\documentclass[UTF8,10pt,a4paper]{ctexart}
+\usepackage[margin=20mm,headheight=26pt]{geometry}
+\usepackage{graphicx,xcolor,fancyhdr,booktabs,tabularx,enumitem,hyperref}
+\definecolor{ink}{HTML}{12313B}\definecolor{teal}{HTML}{008F89}
+\hypersetup{colorlinks=true,urlcolor=teal,linkcolor=teal,pdftitle={WorldGuard 提交材料}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}\linespread{1.12}
+\setlist{nosep,leftmargin=1.5em}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\raisebox{-4pt}{\includegraphics[height=8mm]{assets/logo.png}}\quad\textbf{\textcolor{ink}{WorldGuard}}}
+\fancyhead[R]{\small 零界智行\quad U406}
+\fancyfoot[L]{\footnotesize 本科生组 · 南京大学 / 东南大学}
+\fancyfoot[R]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\ctexset{section={format=\Large\bfseries\color{ink},beforeskip=12pt,afterskip=6pt},subsection={format=\large\bfseries\color{teal}}}
+\newcommand{\cover}[2]{\vspace*{5mm}{\small\textcolor{teal}{WORLDGUARD / SUBMISSION 2026}}\par\vspace{4mm}{\huge\bfseries\color{ink}#1}\par\vspace{3mm}{\large #2}\par\vspace{4mm}\hrule\vspace{5mm}}
+\newcommand{\note}[1]{\par\smallskip\noindent\colorbox{teal!7}{\parbox{0.95\linewidth}{\small #1}}\par\smallskip}
+\begin{document}
+
+\cover{第三方资源与 AI 使用说明}{软件、数据、视觉素材与公开证据口径}
+\section{软件来源}
+AGH 来自 AgnesAI-Labs 官方仓库，固定提交见技术指南；上游源码独立获取，不把上游代码冒充本团队原创。React、Vite、TypeScript、FastAPI 等依赖通过包管理器安装，具体版本与许可证以各依赖元数据为准。公开仓库不搬运 node\_modules、Python 虚拟环境或官方运行时源码。
+
+WorldGuard 业务实现包括导航测试工作流、受限工具适配、独立几何验收、结果与证据组织及工作台集成。使用 Codex 辅助开发与材料制作，成员具体贡献须由本人补充确认。
+\section{数据与验证}
+本次选定案例为程序生成的二维合成网格，不宣称来自真实仓库扫描。所有用于论证的路径图从保存的网格和路径数据绘制。验收证据来自确定性几何程序；模型参与工具组织、反馈读取与恢复决策，不独自签发安全结论。
+\section{视觉素材}
+界面 Logo、仓库与机器人背景、场景插画使用本项目内置图像生成工具制作的资产；素材登记见 \nolinkurl{frontend/public/assets/visual-v3/sources.json}。用户提供的设计参考用于界面方向沟通。装饰图、宣传图不作为真实地图、真实机器人照片或实机实验截图。
+
+图像生成模型版本及生成服务使用条款需成员按原始工具记录核实；本说明不擅自授予第三方素材的额外权利。若最终提交加入外部图片、字体、音乐或视频素材，应另行补充来源与使用方式。本轮不覆盖另一分支正在修改的视频素材登记。
+\section{公开内容证明}
+新 GitHub 仓库经用户授权公开，计划包含代码、复现说明和审查后的案例。首次真实发布完成后才登记有效链接、发布时间及截图，不倒填日期、不制造历史施工记录。
+
+B站内容已由用户发布：\url{https://www.bilibili.com/video/BV1dQJ66tEsV/}；页面显示发布时间为 2026-10-15 10:48:05。最终证明至少包含一个已公开的项目页面、有效链接、能显示发布日期的截图和采集日期。未发布草稿、私有仓库或模型生成截图不计为完成。
+\section{提交边界}
+直接上传 ZIP 的 200 MB 为该上传方式限制；超出可用仓库或第三方共享链接，并保证评审期间访问。视频仅提交链接，长度 3 至 5 分钟；本轮不固定其最终版本。
+
+规则来源为用户提供的主办方说明与后续群公告。此文为材料整理说明，不代替赛事工作组的最终解释或成员本人确认。
+
+\end{document}

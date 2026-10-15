@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "date": "2026-10-14",
+  "direction": "B / wide engineering, dark teal and mint",
+  "assets": [
+    {
+      "file": "background-warehouse-depth.png",
+      "source": "design/worldguard/2026-10-14/worldguard-visual-library-v3/02-scenes/background-warehouse-depth.png",
+      "purpose": "Decorative interface illustration; never used as navigation evidence",
+      "bytes": 1943743,
+      "sha256": "1ba6053c93219a741ec1ac90b395c50a3f0ab9cecd26e36fde8c2400b6397f7a"
+    },
+    {
+      "file": "hero-warehouse-lidar.png",
+      "source": "design/worldguard/2026-10-14/worldguard-visual-library-v3/02-scenes/hero-warehouse-lidar.png",
+      "purpose": "Decorative interface illustration; never used as navigation evidence",
+      "bytes": 1958830,
+      "sha256": "0db80a3f5d95e65a53b91f953af69ad58e795a26531433d2134f53908fc8b3c5"
+    },
+    {
+      "file": "scene-blockage.png",
+      "source": "design/worldguard/2026-10-14/worldguard-visual-library-v3/02-scenes/scene-blockage.png",
+      "purpose": "Decorative interface illustration; never used as navigation evidence",
+      "bytes": 2105104,
+      "sha256": "80a9a07283475481fbb15584d48cce0622285b932443ac63b1f075e8a2b8adec"
+    },
+    {
+      "file": "scene-clearance.png",
+      "source": "design/worldguard/2026-10-14/worldguard-visual-library-v3/02-scenes/scene-clearance.png",
+      "purpose": "Decorative interface illustration; never used as navigation evidence",
+      "bytes": 2001691,
+      "sha256": "ee76a35ce3d98f60861f9055d5f8f608c53d4531431a6e51e75d3a772413ac1d"
+    },
+    {
+      "file": "scene-recovery.png",
+      "source": "design/worldguard/2026-10-14/worldguard-visual-library-v3/02-scenes/scene-recovery.png",
+      "purpose": "Decorative interface illustration; never used as navigation evidence",
+      "bytes": 2328141,
+      "sha256": "e25714554901c7702856b85603f3bc3e970b94c19f6a961c3d37fe9725c58218"
+    },
+    {
+      "file": "wide-engineering-lockup.png",
+      "source": "design/worldguard/2026-10-14/worldguard-visual-library-v3/08-wordmark-options/b-wide-engineering.png",
+      "generator": "Built-in image_gen; transparent production lockup derived from user-selected B study",
+      "prompt": "Extract only the central horizontal WG symbol and WorldGuard lockup from B wide-engineering study. Preserve capitalization, wide engineering letterforms, symbol proportions and circular evidence node. World off-white, Guard mint; actual transparent background. No headings, captions, dividers, panels, shadows or glow. Keep complete mark centered with modest padding for 190-pixel sidebar usage.",
+      "bytes": 370915,
+      "sha256": "b990825a6cae60c965139034eadf7256d3f93bd817325afe45367723d96bf9c2"
+    }
+  ]
+}

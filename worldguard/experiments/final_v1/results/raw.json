@@ -1,0 +1,324 @@
+[
+  {
+    "method": "reference_current",
+    "seed": 1001,
+    "group": "normal",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 435,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/reference_current/run_cb09b988586f48e1af46fcdb29e9a444/cases/normal_1001",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 1001,
+    "group": "normal",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 435,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_a77b02e69c1c41718ad352fab5a3974c/cases/normal_1001",
+    "replay_path": null
+  },
+  {
+    "method": "reference_current",
+    "seed": 1002,
+    "group": "normal",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 429,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/reference_current/run_a2a7a9e5d3a64007ae3e93f1cc85f072/cases/normal_1002",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 1002,
+    "group": "normal",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 429,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_bc4940c974934b9f89c61ee6ece81614/cases/normal_1002",
+    "replay_path": null
+  },
+  {
+    "method": "reference_current",
+    "seed": 1003,
+    "group": "normal",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 432,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/reference_current/run_75d814db5e4b4560bf2f974fb235d694/cases/normal_1003",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 1003,
+    "group": "normal",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 432,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_0b82263a89504f74a3d4f318898cdf6d/cases/normal_1003",
+    "replay_path": null
+  },
+  {
+    "method": "reference_current",
+    "seed": 2001,
+    "group": "block",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 552,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/reference_current/run_fb489351c97340bfaf4b9a6893d8abe8/cases/block_2001",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 2001,
+    "group": "block",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 552,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_44723c07ba314717bd801029770435ef/cases/block_2001",
+    "replay_path": "reproduction/TEST_MUTANT_stale_view/block_2001/replay.json"
+  },
+  {
+    "method": "reference_current",
+    "seed": 2002,
+    "group": "block",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 552,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/reference_current/run_859fa203c0694bc998dd13051d6d881c/cases/block_2002",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 2002,
+    "group": "block",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 552,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_bc5d46baab974f7184d1445ecd3a2f61/cases/block_2002",
+    "replay_path": "reproduction/TEST_MUTANT_stale_view/block_2002/replay.json"
+  },
+  {
+    "method": "reference_current",
+    "seed": 2003,
+    "group": "block",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 552,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/reference_current/run_bb2153b46e4c4ec6abbb1ec67dd31545/cases/block_2003",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 2003,
+    "group": "block",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 552,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_cb2e2f68e0d44fdc8c1df232596d020a/cases/block_2003",
+    "replay_path": "reproduction/TEST_MUTANT_stale_view/block_2003/replay.json"
+  },
+  {
+    "method": "reference_current",
+    "seed": 3001,
+    "group": "clearance",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 84,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "UNREACHABLE",
+      "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+    },
+    "case_directory": "runs/reference_current/run_c9350f65476b45afb23b076f7bfcb93d/cases/clearance_3001",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 3001,
+    "group": "clearance",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 84,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "UNREACHABLE",
+      "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_9a8d3c61985a4b0299462dc8075e9e22/cases/clearance_3001",
+    "replay_path": "reproduction/TEST_MUTANT_stale_view/clearance_3001/replay.json"
+  },
+  {
+    "method": "reference_current",
+    "seed": 3002,
+    "group": "clearance",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 90,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "UNREACHABLE",
+      "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+    },
+    "case_directory": "runs/reference_current/run_3f3ab71f9ba64d908d71982d1df57172/cases/clearance_3002",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 3002,
+    "group": "clearance",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 90,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "UNREACHABLE",
+      "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_f097ffeac7ad4603a9c86033cabe78f0/cases/clearance_3002",
+    "replay_path": "reproduction/TEST_MUTANT_stale_view/clearance_3002/replay.json"
+  },
+  {
+    "method": "reference_current",
+    "seed": 3003,
+    "group": "clearance",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 142,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/reference_current/run_8c71ccdbe32f4fa981a2a0f2699c3711/cases/clearance_3003",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 3003,
+    "group": "clearance",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 142,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "REACHABLE"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_1b695eed66334008b3212d23cea96e83/cases/clearance_3003",
+    "replay_path": null
+  },
+  {
+    "method": "reference_current",
+    "seed": 4001,
+    "group": "stop",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 330,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "UNREACHABLE",
+      "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+    },
+    "case_directory": "runs/reference_current/run_9a1ee432d4884f77a1d516f5daceec51/cases/stop_4001",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 4001,
+    "group": "stop",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 330,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "UNREACHABLE",
+      "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_efaa6db399134159b26702da854916cd/cases/stop_4001",
+    "replay_path": "reproduction/TEST_MUTANT_stale_view/stop_4001/replay.json"
+  },
+  {
+    "method": "reference_current",
+    "seed": 4002,
+    "group": "stop",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 286,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "UNREACHABLE",
+      "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+    },
+    "case_directory": "runs/reference_current/run_b17f0aeefe5a4d0290ccd3a39329e0e0/cases/stop_4002",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 4002,
+    "group": "stop",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 286,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "UNREACHABLE",
+      "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_d7cb89c67a654b5fbc021ac89eb07161/cases/stop_4002",
+    "replay_path": "reproduction/TEST_MUTANT_stale_view/stop_4002/replay.json"
+  },
+  {
+    "method": "reference_current",
+    "seed": 4003,
+    "group": "stop",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 308,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "UNREACHABLE",
+      "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+    },
+    "case_directory": "runs/reference_current/run_75d0d6e21af24dfca979cc958fd3d96f/cases/stop_4003",
+    "replay_path": null
+  },
+  {
+    "method": "TEST_MUTANT_stale_view",
+    "seed": 4003,
+    "group": "stop",
+    "oracle": {
+      "model": "four_neighbor_cell_centers_exact_endpoint_edges_v1",
+      "visited": 308,
+      "scope": "finite grid graph only; not arbitrary continuous or physical reachability",
+      "status": "UNREACHABLE",
+      "reason": "EXHAUSTIVE_GRAPH_SEARCH"
+    },
+    "case_directory": "runs/TEST_MUTANT_stale_view/run_9ac303f237164bb4bd4b78e5ef7005e8/cases/stop_4003",
+    "replay_path": "reproduction/TEST_MUTANT_stale_view/stop_4003/replay.json"
+  }
+]
