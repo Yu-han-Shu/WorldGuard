@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: python -m pip install -e './worldguard[dev,api,mcp]'
+      - run: python -m pip install -e './worldguard[dev,api,mcp,ui]'
       - run: python -m pytest -q
         working-directory: worldguard
       - run: node --test worldguard/agh_plugin/guard.test.mjs
