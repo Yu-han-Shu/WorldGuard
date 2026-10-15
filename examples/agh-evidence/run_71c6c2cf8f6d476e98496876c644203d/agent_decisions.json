@@ -1,0 +1,15 @@
+[
+  {
+    "phase": "PLAN",
+    "summary": "先跑 normal 基准，再跑 block_route_1/2 堵路恢复；失败则 REFRESH_MAP_REPLAN 并复审，未过则 SAFE_STOP。",
+    "case_id": "",
+    "evidence_ids": [],
+    "case_order": [
+      "normal",
+      "block_route_1",
+      "block_route_2"
+    ],
+    "timestamp": "2026-10-15T00:16:30.419730+00:00",
+    "source": "AGNES_AGH"
+  }
+]

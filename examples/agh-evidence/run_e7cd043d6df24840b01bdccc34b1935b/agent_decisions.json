@@ -1,0 +1,28 @@
+[
+  {
+    "phase": "PLAN",
+    "summary": "依次测试 normal 及 pinch_clearance_1-4；正常通过继续，失败/未知则按证据 REFRESH_MAP_REPLAN 再审计；仍未通过则 SAFE_STOP，最多11动作。",
+    "case_id": "",
+    "evidence_ids": [],
+    "case_order": [
+      "normal",
+      "pinch_clearance_1",
+      "pinch_clearance_2",
+      "pinch_clearance_3",
+      "pinch_clearance_4"
+    ],
+    "timestamp": "2026-10-15T00:28:48.888658+00:00",
+    "source": "AGNES_AGH"
+  },
+  {
+    "phase": "RECOVERY",
+    "summary": "pinch_clearance_1 原路径碰撞且余量负；pinch_clearance_2 同类故障。将按证据执行 REFRESH_MAP_REPLAN 后再次独立审计；未通过则 SAFE_STOP。",
+    "case_id": "pinch_clearance_1",
+    "evidence_ids": [
+      "evidence_6dbad8434e2041149e26617bd0706904"
+    ],
+    "case_order": [],
+    "timestamp": "2026-10-15T00:30:28.594063+00:00",
+    "source": "AGNES_AGH"
+  }
+]

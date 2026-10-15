@@ -15,38 +15,32 @@
 \newcommand{\cover}[2]{\vspace*{5mm}{\small\textcolor{teal}{WORLDGUARD / SUBMISSION 2026}}\par\vspace{4mm}{\huge\bfseries\color{ink}#1}\par\vspace{3mm}{\large #2}\par\vspace{4mm}\hrule\vspace{5mm}}
 \newcommand{\note}[1]{\par\smallskip\noindent\colorbox{teal!7}{\parbox{0.95\linewidth}{\small #1}}\par\smallskip}
 \begin{document}
+\cover{运行证据核查指南}{真实记录 · 模型参与 · 工具调用 · 独立验证}
+\note{阅读顺序：先看下方调用链，再按事件序号查看原记录，最后打开附件 05 复核地图、路径与验收结果。}
+\section{AGH 执行记录}
+两次真实 Agnes 运行均发生于 2026-10-15。复杂仓库运行包含 3 个案例、19 次模型请求尝试；窄通道运行包含 5 个案例、23 次请求尝试。两个运行子目录分别保存 \texttt{agh\_session.jsonl}、\texttt{agh\_summary.json}、业务事件、决策与结构化报告。
 
-\cover{运行证据核查指南}{区分真实执行记录、业务证据与官方导出}
-\section{两组真实运行}
-\textbf{A：复杂仓库}\par
-\texttt{run\_71c6c2cf8f6d476e98496876c644203d}\par
-3 个案例，19 次模型请求尝试；种子 90749；包含正常通行及两次堵路恢复。会话完整标识见同目录 summary。
+记录为从官方 AGH Host 实际事件捕获的脱敏投影，保留序号、时间、工具 ID、输入输出和模型标识；未将模型生成的叙述当成执行日志，也不将该投影标称为官方网页原生导出。投影字节哈希已与 summary 复核一致。
+\section{一条完整的核心工具链}
+选择复杂仓库 \texttt{block\_route\_2}：
+\begin{center}\begin{tabularx}{\linewidth}{p{18mm}p{37mm}X}\toprule
+调用 / 结果 & 工具 & 核查内容\\\midrule
+216 / 224 & \texttt{wg\_run\_case} & 在堵路场景执行原始策略，生成路径\\
+239 / 243 & \texttt{wg\_audit\_path} & 原始路径独立验收不通过\\
+256 / 260 & \texttt{wg\_recover\_case} & 按反馈刷新地图并重新规划\\
+273 / 277 & \texttt{wg\_audit\_path} & 恢复路径独立验收通过\\\bottomrule
+\end{tabularx}\end{center}
+完整输入输出见\textbf{核心工具调用链.json}。每组调用与结果通过 \texttt{toolUseId} 匹配，来源为运行 A 的事件投影；内容未重新生成。
+\section{Agnes 模型参与核心任务}
+调用前的模型请求事件序号为 212、235、254、271。\par
+\textbf{模型标识：}\texttt{agnes-3.0-flash}\par
+\textbf{调用路由：}\texttt{account-agnes-cn-hackathon}\par
+这些真实事件连接模型请求、工具调用与结果，展示模型参与测试与反馈恢复的过程。
 
-\textbf{B：窄通道}\par
-\texttt{run\_e7cd043d6df24840b01bdccc34b1935b}\par
-5 个案例，23 次模型请求尝试；种子 11；3 次原始通过、2 次停止。两组运行均发生于 2026-10-15，模型 ID 为 agnes-3.0-flash。
-\section{附件与用途}
-\par
-\begin{tabularx}{\linewidth}{p{43mm}X}\toprule
-文件 & 可核查内容\\\midrule
-agh\_summary.json & 路由、模型、请求计数、事件序号、工具调用与投影哈希\\
-agh\_session.jsonl & 从真实官方 Host 事件提取的脱敏投影，按序号核对工具输入与输出\\
-events.jsonl & WorldGuard 业务动作事件\\
-agent\_decisions.json & 已公开的动作 / 决策记录\\
-report.json & 案例结果、原始与恢复审计、用量完整性\\
-样例目录 manifest.json & 每个 JSON 规范化内容的 SHA-256\\\bottomrule
-\end{tabularx}\par
+调用方式为官方 AGH Host 的模型路由与受限 MCP 工具接口；模型编排动作，确定性规划器生成路径，几何验收器给出通过或失败。模型请求计数包含辅助请求；完整 token 与费用未知，原记录保留 null。
+\section{关键配置与专业验证}
+圆形机器人半径 0.18 m，安全余量 0.05 m；网格 0.25 m；验收器版本 \texttt{capsule-raw-grid-1}。同一目标与约束下，堵路原始路径最小剩余净空为 $-0.230$ m（FAIL），恢复后为 $0.145$ m（PASS）；路径长度为 41.5 m 与 48.0 m。
 
-\section{至少一条实际工具链}
-A 组可核查：health（15→19）、create\_campaign（32→36）、list\_candidates（49→53）、run\_case（67→72）、audit\_path（90→95），工具名均带 wg\_ 前缀。后续证据读取与恢复动作沿同一会话执行。
-
-序号对应真实调用和结果。在 session 投影中匹配调用 ID，再打开案例 result 与 audit 复核。
-\section{官方导出状态与操作说明}
-\note{重要状态：本包已提取真实 Host 记录，但尚未取得主办方指定的官方网页导出包。不能把 JSON 摘要或模型自行生成的“轨迹报告”当作官方导出。}
-本项目通过隔离 AGH Host 执行任务。目前官方网页后台未识别到这些隔离会话，需继续处理会话兼容与导出路径，或向主办方确认 Host 方式的接受形式。原始本机数据库保持保留，不为导出伪造会话。
-
-如果使用官方导入功能载入历史记录，应保留 imported 标记和导入来源，并明确“历史复核副本”。导入后导出不应被描述成原始会话的原生网页导出。所有对外导出先检查 Key、路径、输入及工具内容，保留本机原件与审查副本的区别。
-\section{记录中的缺失字段}
-单案例请求数为 null 时表示未在案例层分摊；采用运行级 summary，不填 0。完整 token 用量及费用未知，观察到的部分 token 不作为总量。业务 report.md 的旧模板文字不得覆盖结构化记录的 LIVE 模式与实际请求事实。
+附件\textbf{关键配置.json}提供预算及运行设置；附件 05 提供三类样例、规范化 JSON 哈希及重放结果，三例均 \texttt{matches=true}。重放为离线确定性复核，模型请求为 0；保留原始失败，不以恢复通过覆盖初始问题。
 
 \end{document}

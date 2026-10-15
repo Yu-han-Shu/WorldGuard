@@ -1,0 +1,369 @@
+{
+  "type": "result",
+  "runtime_mode": "LIVE_AGNES",
+  "reason": "completed",
+  "error_code": null,
+  "session_id": "agnes:local:local-dev:wg:run_e7cd043d6df24840b01bdccc34b1935b",
+  "route": "account-agnes-cn-hackathon",
+  "model": "agnes-3.0-flash",
+  "ledger_sha256": "f19bb9f453860bd11293c911da92a91d900661ff18c919ad7661de1c6dba1b60",
+  "model_requests": 23,
+  "model_tokens": null,
+  "observed_model_tokens": 56173,
+  "model_usage_complete": false,
+  "unreported_model_requests": 1,
+  "model_cost": null,
+  "plugin_host": "PASS",
+  "runtime_limits": {
+    "max_requests": 30,
+    "request_timeout_seconds": 90,
+    "wall_seconds": 300
+  },
+  "request_failures": [],
+  "trace": {
+    "schema_version": "worldguard-agh-trace/v1",
+    "provenance": "CAPTURED_OFFICIAL_HOST",
+    "last_seq": 407,
+    "primary_dispatch_count": 22,
+    "total_model_requests": 23,
+    "nonce_round_trip": true,
+    "violations": [],
+    "tools": [
+      {
+        "tool": "wg_health",
+        "call_seq": 15,
+        "result_seq": 19,
+        "success": true
+      },
+      {
+        "tool": "wg_create_campaign",
+        "call_seq": 32,
+        "result_seq": 36,
+        "success": true
+      },
+      {
+        "tool": "wg_list_candidates",
+        "call_seq": 49,
+        "result_seq": 53,
+        "success": true
+      },
+      {
+        "tool": "wg_run_case",
+        "call_seq": 66,
+        "result_seq": 70,
+        "success": true
+      },
+      {
+        "tool": "wg_publish_decision",
+        "call_seq": 83,
+        "result_seq": 87,
+        "success": true
+      },
+      {
+        "tool": "wg_audit_path",
+        "call_seq": 100,
+        "result_seq": 104,
+        "success": true
+      },
+      {
+        "tool": "wg_run_case",
+        "call_seq": 118,
+        "result_seq": 125,
+        "success": true
+      },
+      {
+        "tool": "wg_run_case",
+        "call_seq": 119,
+        "result_seq": 129,
+        "success": true
+      },
+      {
+        "tool": "wg_run_case",
+        "call_seq": 120,
+        "result_seq": 133,
+        "success": true
+      },
+      {
+        "tool": "wg_run_case",
+        "call_seq": 121,
+        "result_seq": 137,
+        "success": true
+      },
+      {
+        "tool": "wg_audit_path",
+        "call_seq": 150,
+        "result_seq": 154,
+        "success": true
+      },
+      {
+        "tool": "wg_audit_path",
+        "call_seq": 167,
+        "result_seq": 171,
+        "success": true
+      },
+      {
+        "tool": "wg_audit_path",
+        "call_seq": 184,
+        "result_seq": 188,
+        "success": true
+      },
+      {
+        "tool": "wg_audit_path",
+        "call_seq": 201,
+        "result_seq": 205,
+        "success": true
+      },
+      {
+        "tool": "wg_publish_decision",
+        "call_seq": 218,
+        "result_seq": 222,
+        "success": false
+      },
+      {
+        "tool": "wg_publish_decision",
+        "call_seq": 235,
+        "result_seq": 239,
+        "success": true
+      },
+      {
+        "tool": "wg_recover_case",
+        "call_seq": 252,
+        "result_seq": 256,
+        "success": true
+      },
+      {
+        "tool": "wg_audit_path",
+        "call_seq": 269,
+        "result_seq": 273,
+        "success": true
+      },
+      {
+        "tool": "wg_recover_case",
+        "call_seq": 286,
+        "result_seq": 290,
+        "success": true
+      },
+      {
+        "tool": "wg_read_evidence",
+        "call_seq": 304,
+        "result_seq": 310,
+        "success": true
+      },
+      {
+        "tool": "wg_read_evidence",
+        "call_seq": 305,
+        "result_seq": 314,
+        "success": true
+      },
+      {
+        "tool": "wg_recover_case",
+        "call_seq": 306,
+        "result_seq": 318,
+        "success": true
+      },
+      {
+        "tool": "wg_audit_path",
+        "call_seq": 331,
+        "result_seq": 335,
+        "success": true
+      },
+      {
+        "tool": "wg_recover_case",
+        "call_seq": 348,
+        "result_seq": 352,
+        "success": true
+      },
+      {
+        "tool": "wg_optimize_case",
+        "call_seq": 367,
+        "result_seq": 371,
+        "success": true
+      },
+      {
+        "tool": "wg_finish_campaign",
+        "call_seq": 385,
+        "result_seq": 389,
+        "success": true
+      }
+    ],
+    "product_event_links": [
+      {
+        "agh_call_seq": 49,
+        "agh_result_seq": 53,
+        "product_event_id": "event_c8bb402e93194a48825d6e6edccee221",
+        "tool": "wg_list_candidates",
+        "input_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "output_hash": "cbf6dbd55891ccdf71e1c4f00eb6155098c07b6d11d6f42d8020b77f3a0a0ba1"
+      },
+      {
+        "agh_call_seq": 66,
+        "agh_result_seq": 70,
+        "product_event_id": "event_41600d1ccecb471592295f09b9148090",
+        "tool": "wg_run_case",
+        "input_hash": "d8f41759eba8f16f7c494d86ea1f9cc248b5c739aa3096bcb1e474830af8dbfa",
+        "output_hash": "1c1cc98a882bebbb08f3245851b411b7001123c9fe8c7d4b44611d255b64115e"
+      },
+      {
+        "agh_call_seq": 83,
+        "agh_result_seq": 87,
+        "product_event_id": "event_7928821f67494d20a50bbdf7993e99b7",
+        "tool": "wg_publish_decision",
+        "input_hash": "b15cb28590c30f1ba56de09bb0ffad345da176d43e4495cb264e8f4c9e5b9c3a",
+        "output_hash": "9041b558dacbc3fc72a62c0d140a28a0588aa6b8c58b5637e9c1b24fc0414cd2"
+      },
+      {
+        "agh_call_seq": 100,
+        "agh_result_seq": 104,
+        "product_event_id": "event_f4d8ce4b57464b65b50ac1d1e5dbedba",
+        "tool": "wg_audit_path",
+        "input_hash": "76da57d30db4a908e07fad50b1b9ed2a40a44facb74d72e9959083bf177d85ab",
+        "output_hash": "3dda246c96456bb13cf6a75e8c8b92c9ce3eded7694b9ae311ccbeae8e564791"
+      },
+      {
+        "agh_call_seq": 118,
+        "agh_result_seq": 125,
+        "product_event_id": "event_632461a2da6c41d09bd331b6d6cb9e07",
+        "tool": "wg_run_case",
+        "input_hash": "f8eafc8a0866ce56427cc3dc6e070dda5d1db102fbe764c74586df6c37269966",
+        "output_hash": "32d7f3284e6101b590adaad6790a7b1c43fa45deb45a6b1457a483ebd9b22a68"
+      },
+      {
+        "agh_call_seq": 119,
+        "agh_result_seq": 129,
+        "product_event_id": "event_f5004485a8bd470ab748a7e6a536f1a1",
+        "tool": "wg_run_case",
+        "input_hash": "4237b51e7506dca66ba69cbb614d34797d2146a83d1f04d89c9d6ca4267b51e4",
+        "output_hash": "17effbc07f7e288ef577a68b10249743dbb3c2ad3f332189ccfad042ea5d50f3"
+      },
+      {
+        "agh_call_seq": 120,
+        "agh_result_seq": 133,
+        "product_event_id": "event_65c5d69037304b368df3fd4fa90acbd3",
+        "tool": "wg_run_case",
+        "input_hash": "caa18776a59a3d2a7104d9f53bc789d5700aa5826df55bf9e106eaa3c72a659f",
+        "output_hash": "930ac3a65d4faa40f5c514e510d11203225e714914dca9043a95e642e1d93ba6"
+      },
+      {
+        "agh_call_seq": 121,
+        "agh_result_seq": 137,
+        "product_event_id": "event_bd64115847b5472f94df47a69afe50d6",
+        "tool": "wg_run_case",
+        "input_hash": "280df0578c3015d247b7da277f7d46a1775dcfbba9719b45ee7f377dc1f1e62b",
+        "output_hash": "7f3fdb665d68c5a61527df78cb3d961d4ce01f03359c6d2b8e9c7c79f25f7283"
+      },
+      {
+        "agh_call_seq": 150,
+        "agh_result_seq": 154,
+        "product_event_id": "event_ac5fdc2e127f486e9fcfe11535e8b991",
+        "tool": "wg_audit_path",
+        "input_hash": "a6cee5f31bdab860bd66bf18e42725d554b51ab8bc2406ec820371bfd1b50e9f",
+        "output_hash": "fb62d74230befe91a3c06a2f532619c9916b5c33b5d3b042634b024ece2b1f0e"
+      },
+      {
+        "agh_call_seq": 167,
+        "agh_result_seq": 171,
+        "product_event_id": "event_c6a487e06ff5460788ed1e1e0ee33f91",
+        "tool": "wg_audit_path",
+        "input_hash": "bcc096181a7fde2f9f99eebf566d8b03947bc8efb75dc404bf74b2615696b8eb",
+        "output_hash": "e7fc3a657846c85ae0af2e0a5986211bb0d783fbdecb2343fbc70fe680f69653"
+      },
+      {
+        "agh_call_seq": 184,
+        "agh_result_seq": 188,
+        "product_event_id": "event_23b24dcabc3d46a8b9a921c774f1bc77",
+        "tool": "wg_audit_path",
+        "input_hash": "d62449a279cbbbf2c6cd3a679e79f6d2769c03af8e891e8c25f1bec875f502a9",
+        "output_hash": "bdfdeb8c63f9b4308d4fc0b586f87313e5a09562b7927f48eceee62ae95700e4"
+      },
+      {
+        "agh_call_seq": 201,
+        "agh_result_seq": 205,
+        "product_event_id": "event_ef095e45a47e45a4bc7fac3fa9857844",
+        "tool": "wg_audit_path",
+        "input_hash": "6bf072c525c6a0d7f32ba4246d4f87ee8dec465ca64d624cea95962428bb628f",
+        "output_hash": "627522cfe0a7dab547362714ff132d81579d2e363b2d7fd892e4e9de9724f74e"
+      },
+      {
+        "agh_call_seq": 235,
+        "agh_result_seq": 239,
+        "product_event_id": "event_014bcca9438c4a3e9c2298bc7488982a",
+        "tool": "wg_publish_decision",
+        "input_hash": "2bbd884bfcd9ab9750559ed0c1deb656dad3574589c276fdf8cf45494e76fb6e",
+        "output_hash": "25f168598ab21d2ed92f28284613a35db6b4088e926412a91782531296bfd23f"
+      },
+      {
+        "agh_call_seq": 252,
+        "agh_result_seq": 256,
+        "product_event_id": "event_cd021257672c4dffb05cf490e82f31b5",
+        "tool": "wg_recover_case",
+        "input_hash": "7cad2e2e808d81e9452ee0026bb0f09c5407092805bc4d5d89814785ec682339",
+        "output_hash": "0df5a48bfb4ef2e5203a8d54a053a386aaee22f861286e8a4e5608dd6b0ae4f3"
+      },
+      {
+        "agh_call_seq": 269,
+        "agh_result_seq": 273,
+        "product_event_id": "event_584882a7d6b54d688322b181bbc91104",
+        "tool": "wg_audit_path",
+        "input_hash": "e7ce82324cb0d8215c261999a95cf028d4863e40ca1ec37272872c664856ea33",
+        "output_hash": "d5bf9770dde05ba8745ae14ca663697399f2c79e68bc1ed38ca7eaedbd48fb00"
+      },
+      {
+        "agh_call_seq": 286,
+        "agh_result_seq": 290,
+        "product_event_id": "event_933589f922a947da832706338413aae1",
+        "tool": "wg_recover_case",
+        "input_hash": "2eba69afe63ba51dded22a8d7beccf75097fdb96527de16d07c295d0f8e460a8",
+        "output_hash": "05f52470a0e491ee235dd016cc7be1e160ea0ffd164d4ff9811896a09a11f208"
+      },
+      {
+        "agh_call_seq": 304,
+        "agh_result_seq": 310,
+        "product_event_id": "event_557139a9adb74bbcb657360a5e338a17",
+        "tool": "wg_read_evidence",
+        "input_hash": "71279e79f918815b8a6fd22cc38f7379d9f2d47bc902c7049d53fe1e365c7726",
+        "output_hash": "7377000969e3221bc9bf07719167d9bd743d4a1b67d0e6e11be6fe1db4434cd6"
+      },
+      {
+        "agh_call_seq": 305,
+        "agh_result_seq": 314,
+        "product_event_id": "event_0fff029c2a0348ffb65f35769a3b2cd4",
+        "tool": "wg_read_evidence",
+        "input_hash": "72c4727b3fb5ac1ed16c4d52e231c4e143dcb89d9b8a214461f9bdb5818fc981",
+        "output_hash": "3f073198082f9e4a1c10110337dd8a95b3ec286147df4c3e0fcce07b3de00047"
+      },
+      {
+        "agh_call_seq": 306,
+        "agh_result_seq": 318,
+        "product_event_id": "event_d9bc624b688745f696e80e06566527a2",
+        "tool": "wg_recover_case",
+        "input_hash": "57fefad07c077fc7a70c38cae46482b79d2076b7753e590febd6537c70a5ffe2",
+        "output_hash": "c8987250e3643b4203bdd388898b3ee93a31529edb56fb59841687a34df366c0"
+      },
+      {
+        "agh_call_seq": 331,
+        "agh_result_seq": 335,
+        "product_event_id": "event_a2dad33d74b74d28bb6cad869e593714",
+        "tool": "wg_audit_path",
+        "input_hash": "96ed1a34a1b951e7876356cd7f38a6383eea55a0abdb24bbbc6f8eb154a0d2d6",
+        "output_hash": "857dc148a866f6cde5ce2a1524cf5b746904ca5e6b1eebe9f6ce654e133c87ff"
+      },
+      {
+        "agh_call_seq": 348,
+        "agh_result_seq": 352,
+        "product_event_id": "event_a610e3ffa54046b7a9739eef8f08a5f9",
+        "tool": "wg_recover_case",
+        "input_hash": "f50344f1251bcad131c728067e717d55e4cddc83d1035867b8484184c2d634a4",
+        "output_hash": "4241c41c9ed1cea91de1ab32556b082ca2172be1a47ea3c678b88bff01e90788"
+      },
+      {
+        "agh_call_seq": 367,
+        "agh_result_seq": 371,
+        "product_event_id": "event_9cb8f6e2bcd344e69948b7390b4cbdb1",
+        "tool": "wg_optimize_case",
+        "input_hash": "2d074de03b1b3006bafecad2c36eb1d9da51ba2b1d8f34f4133212a4da9507d8",
+        "output_hash": "a7a39b8e5f01e9360eb4ae9bce616f0da945b883b02c094ab6c95952e18652f9"
+      }
+    ]
+  },
+  "nonce": "40d4523765abac93a7aeb0847bc20e32"
+}

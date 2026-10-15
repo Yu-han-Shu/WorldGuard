@@ -1,0 +1,38 @@
+\documentclass[UTF8,10pt,a4paper]{ctexart}
+\usepackage[margin=20mm,headheight=26pt]{geometry}
+\usepackage{graphicx,xcolor,fancyhdr,booktabs,tabularx,enumitem,hyperref}
+\definecolor{ink}{HTML}{12313B}\definecolor{teal}{HTML}{008F89}
+\hypersetup{colorlinks=true,urlcolor=teal,linkcolor=teal,pdftitle={WorldGuard 提交材料}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}\linespread{1.12}
+\setlist{nosep,leftmargin=1.5em}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\raisebox{-4pt}{\includegraphics[height=8mm]{assets/logo.png}}\quad\textbf{\textcolor{ink}{WorldGuard}}}
+\fancyhead[R]{\small 零界智行\quad U406}
+\fancyfoot[L]{\footnotesize 本科生组 · 南京大学 / 东南大学}
+\fancyfoot[R]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\ctexset{section={format=\Large\bfseries\color{ink},beforeskip=12pt,afterskip=6pt},subsection={format=\large\bfseries\color{teal}}}
+\newcommand{\cover}[2]{\vspace*{5mm}{\small\textcolor{teal}{WORLDGUARD / SUBMISSION 2026}}\par\vspace{4mm}{\huge\bfseries\color{ink}#1}\par\vspace{3mm}{\large #2}\par\vspace{4mm}\hrule\vspace{5mm}}
+\newcommand{\note}[1]{\par\smallskip\noindent\colorbox{teal!7}{\parbox{0.95\linewidth}{\small #1}}\par\smallskip}
+\begin{document}
+\cover{团队成员声明}{零界智行 / 本科生组 / U406}
+\textbf{项目名称：}WorldGuard\qquad\textbf{队长：}束宇涵
+\section{成员与职责分工}
+\begin{tabularx}{\linewidth}{p{16mm}p{22mm}p{18mm}X}\toprule
+姓名 & 学校 & 专业 & 团队职责\\\midrule
+束宇涵 & 南京大学 & 地理科学 & 项目统筹、场景与测试方案设计、工作台集成、报告与演示组织\\[3mm]
+何万里 & 南京大学 & 医学 & 测试样例整理、异常场景与结果复核、使用体验检查、文档整理\\[3mm]
+郑博文 & 东南大学 & 电气 & 导航策略与几何约束验证、AGH 工具链联调、复现测试与技术说明\\\bottomrule
+\end{tabularx}
+\section{独立完成声明}
+我们声明：本作品由学生团队组织设计、开发、测试与整理，提交材料中所列第三方软件、模型、工具和素材已按其实际使用方式说明。团队不将第三方已有成果冒充原创，并对作品内容、演示与技术说明负责。
+
+项目使用官方 Agnes Harness 组织模型和工具执行，使用 Codex 辅助开发与材料制作，使用图像生成工具制作界面视觉素材。具体来源与使用方式见《第三方资源与 AI 使用说明》。这些工具用于辅助工作；团队负责方案选择、系统集成、结果检查及最终提交。
+
+材料中的真实运行、离线重放、合成场景与概念视觉分别标注。运行与验收结果来自保存记录，保留失败和停止结果；不将仿真效果表述为实机认证，不公开模型密钥与个人配置。
+
+\vspace{8mm}
+\textcolor{teal}{\rule{\linewidth}{0.6pt}}\par
+\textbf{参赛团队：}零界智行\qquad\textbf{参赛编号：}U406\par
+\textbf{成员：}束宇涵、何万里、郑博文\qquad\textbf{日期：}2026年10月15日
+\end{document}

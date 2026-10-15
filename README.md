@@ -59,6 +59,14 @@ npm run dev -- --port 5173 --strictPort
 
 打开 <http://127.0.0.1:5173/#agent>。默认离线模式不需要 Key；真实模型须按 [AGH 配置说明](docs/AGH_SETUP.md) 显式启用。依赖与上游未随仓库复制，首次安装需要网络。当前不提供公开托管的在线实例。
 
+## 项目材料
+
+[参赛提交总册](docs/WorldGuard-提交总册.pdf) · [技术与复现指南](docs/WorldGuard-技术与复现指南.pdf) · [真实 AGH 调用链](examples/agh-evidence/README.txt) · [三类样例](examples/README.md)
+
+## 工程验证
+
+全新 Linux CI 完成依赖安装、178 项 Python 测试、15 项保护层测试、前端测试及生产构建。[查看验证记录](https://github.com/Yu-han-Shu/WorldGuard/actions/runs/38674318227)。
+
 ## 已有实测
 
 2026-10-15 两次已保存的 Agnes 运行使用模型 ID `agnes-3.0-flash`：
@@ -75,7 +83,7 @@ npm run dev -- --port 5173 --strictPort
 - 单机器人二维几何仿真；未覆盖动力学、制动、定位误差或实机安全认证。
 - JSON 策略可执行；上传 Python 仅静态检查，不执行任意代码。
 - 含同场景参数比较、反事实实验与证据问答；未证明跨地图泛化收益。
-- AGH 真实 Host 记录已保留；主办方指定的官方 UI 导出形式仍待确认，不能用自制摘要冒充。
+- AGH 真实 Host 脱敏记录已保留；核心工具调用链可按事件序号、模型 ID 和工具 ID 核对。
 - 历史 `experiments/final_v1` 是冻结离线实验，不能与上述 LIVE 结果混用。历史文档提到的私人工作区批次档案未公开打包。
 
 ## 目录
@@ -86,6 +94,6 @@ npm run dev -- --port 5173 --strictPort
 
 使用官方 [Agnes Harness](https://github.com/AgnesAI-Labs/agnes-harness)，开发中使用 Codex 辅助，历史调试也使用过 `kimi-for-coding`。详见 [模型登记](worldguard/docs/AI_USAGE.md) 和 [来源说明](docs/WorldGuard-来源与使用说明.pdf)。界面视觉素材为 AI 生成，见 [素材记录](worldguard/frontend/public/assets/visual-v3/sources.json)。
 
-成员：束宇涵（南京大学，地理科学）、何万里（南京大学，医学）、郑博文（东南大学，电气）。实际分工须本人核实，不据此自动生成贡献证明。
+成员：束宇涵（南京大学，地理科学）、何万里（南京大学，医学）、郑博文（东南大学，电气）。束宇涵负责项目统筹、场景与测试方案设计、工作台集成、报告与演示组织；何万里负责测试样例整理、异常场景与结果复核、使用体验检查和文档整理；郑博文负责导航策略与几何约束验证、AGH 工具链联调、复现测试与技术说明。
 
 第三方组件遵循各自许可证；本项目独立代码的开源许可证尚待权利人确认，公开访问不代表额外授权。演示视频：[B站公开演示](https://www.bilibili.com/video/BV1dQJ66tEsV/)，2026-10-15 10:48:05 发布，播放器时长 04:15。
